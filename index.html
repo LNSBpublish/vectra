@@ -393,7 +393,7 @@ footer .logo b{color:#fff}
 <footer>
   <div class="wrap">
     <span class="logo"><svg viewBox="0 0 40 22" aria-hidden="true"><path d="M1 21 L12 6 L17 12 L23 3 L39 21 Z" fill="#a6e22e"/></svg><span><b>VECTRA</b><small>PLAY YOUR WAY.</small></span></span>
-    <span>© 2026 VECTRA · Faster. Stronger. Together.<br>Schulprojekt · Demo-Shop ohne echte Bestellungen</span>
+    <span>© 2026 VECTRA · Faster. Stronger. Together.<br> · Demo-Shop ohne echte Bestellungen</span>
   </div>
 </footer>
  
@@ -517,7 +517,7 @@ document.getElementById("checkoutBtn").onclick=()=>{
   closeCart();
   const t=totals();
   mbox.innerHTML=`<h3 id="mTitle">Kasse</h3>
-  <div class="demo-note">Demo-Shop für ein Schulprojekt. Es wird nichts bestellt und nichts bezahlt.</div>
+  <div class="demo-note">Demo-Shop Es wird nichts bestellt und nichts bezahlt.</div>
   <form id="cf" novalidate>
     <div class="fgrid">
       <div><label class="lbl" for="fVor">Vorname</label><input id="fVor" autocomplete="off"></div>
@@ -548,7 +548,7 @@ document.getElementById("checkoutBtn").onclick=()=>{
     const nr="VEC-"+Math.floor(100000+Math.random()*900000);
     mbox.innerHTML=`<div class="done"><div class="big">Merci, ${g("fVor").replace(/[<>&"]/g,"")}!</div>
       <p>Deine Demo-Bestellung <b>${nr}</b> wurde simuliert.</p>
-      <div class="demo-note" style="text-align:left">Das ist ein Schulprojekt. Es wurde nichts bestellt, nichts bezahlt und keine Daten gespeichert.</div>
+      <div class="demo-note" style="text-align:left">Es wurde nichts bestellt, nichts bezahlt und keine Daten gespeichert.</div>
       <button class="btn" type="button" id="mDone">Zurück zur Seite</button></div>`;
     state.cart=[];state.code=false;renderCart();
     document.getElementById("mDone").onclick=()=>modal.classList.remove("show");
